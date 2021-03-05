@@ -28,6 +28,7 @@ def iniciar(terminal):
                             jogador.comprarPropriedade(tabuleiro.propriedades[jogador.posicao])
         tabuleiro.encerrarJogo(dados, relatorio)
     montarTerminal(terminal, relatorio.gerarRelatorio(tabuleiro.jogadores))
+    
 def ajustarTexto(relatorio):
     resultado = \
         f'''
@@ -62,6 +63,5 @@ def montarTerminal(terminal, relatorio):
                 return False
     except curses.error as e:
         raise RuntimeError("Seu terminal é muito pequeno para exibir o resultado, por favor maximize ele.")
-    
-    
+      
 curses.wrapper(iniciar)

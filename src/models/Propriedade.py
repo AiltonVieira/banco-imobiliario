@@ -3,8 +3,7 @@ class Propriedade:
         self.custoDeVenda = custoDeVenda
         self.valorDeAluguel = valorDeAluguel
         self.proprietario = None
-        
-        
+         
     def possuiProprietario(self):
         return self.proprietario != None
     

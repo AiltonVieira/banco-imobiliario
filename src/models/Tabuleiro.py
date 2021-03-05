@@ -17,8 +17,7 @@ class Tabuleiro:
         for i in range(0, 20):
             propriedades.append(Propriedade(random.randint(10, 100), random.randint(10, 100)))
         return propriedades
-    
-    
+        
     def devePagarAluguel(self, jogador):
         propriedade = self.propriedades[jogador.posicao]
         return propriedade.possuiProprietario() and not propriedade.pertenceAoJogador(jogador)

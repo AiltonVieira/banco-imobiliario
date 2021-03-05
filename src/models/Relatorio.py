@@ -11,7 +11,6 @@ class Relatorio:
         self.encerradosPorTimeout += dados.timeout
         self.turnosPorPartida.append(dados.turno)
         
-        
     def gerarRelatorio(self, jogadores):
         return {
             "encerradosPorTimeout" : self.encerradosPorTimeout,
